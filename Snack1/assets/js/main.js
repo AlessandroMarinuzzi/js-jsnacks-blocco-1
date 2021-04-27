@@ -16,4 +16,3 @@ if (word_1.length > word_2.length){
     document.getElementById("longest_word").innerHTML = "Try Again!"
 }
 
-// ************ JSnack 2 ***************
