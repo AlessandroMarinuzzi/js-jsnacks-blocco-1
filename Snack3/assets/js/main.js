@@ -6,11 +6,27 @@ console.log(gatsby_guests);
 var guest = prompt("What's your name?")
 console.log(guest);
 
-var message = "You are not on the list"
+// var message = "You are not on the list"
 
-for (var i = 0; [i] < gatsby_guests.length; i++){
-    if (guest == gatsby_guests){
-        var message = "Welcome to the party!"
+// for (var i = 0; [i] < gatsby_guests.length; i++){
+//     if (guest == gatsby_guests[i]){
+//         message = "Welcome to the party!"
+//     }
+// }
+// document.getElementById("message").innerHTML = message
+
+var allowed = false
+
+for (var i=0; i <gatsby_guests.length; i++){
+    console.log(gatsby_guests[i]);
+    if (guest==gatsby_guests[i]){
+        allowed = true
     }
 }
-document.getElementById("message").innerHTML = message
+console.log(allowed);
+
+if (allowed){
+    console.log("Benvenuto");
+} else {
+    console.log("Vai via");
+}
